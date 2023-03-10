@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * @author mihai.hulea
  */
-public class ExampleTest {
+public class  ExampleTest {
 
     @Test
     public void testAdd(){
@@ -17,6 +17,11 @@ public class ExampleTest {
     @Test
     public void testSubstract(){
         assertEquals("Should substract 2 numbers", 5, Example.substract(15,10));
+    }
+
+    @Test
+    public void testMultiply(){
+        assertEquals("Should multiply 2 numbers",6, Example.multiply(2,3));
     }
 
 }
