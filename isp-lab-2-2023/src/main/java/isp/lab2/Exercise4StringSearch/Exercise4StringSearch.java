@@ -10,6 +10,8 @@ public class Exercise4StringSearch {
      * @return
      */
     public static String[] searchSubstrings(String input, String substring) {
+
+
         return null;
     }
 

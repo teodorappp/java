@@ -6,22 +6,40 @@ public class Exercise1RandomArray {
 
     public static int[] getArrayOfRandomNumbers(int n) {
         int[] array = new int[n];
-        //TODO: implement the logic to fill the array with random numbers
+        Random random= new Random();
+        for(int i=0;i<array.length;i++) {
+            array[i] =new Random().nextInt(100);
+        }
+
         return array;
+
     }
 
     public static int[] findMaxAndMin(int[] array) {
-        return null;
+        int[] maxmin=new int[2];
+        maxmin[0]=maxmin[1] =array[0];
+        for(int i=0;i< array.length;i++) {
+            if (array[i] > maxmin[0])
+                maxmin[0] = array[i];
+            if (array[i] < maxmin[1])
+                maxmin[1] = array[i];
+        }
+        return maxmin;
     }
 
     public static void main(String[] args) {
 
         Random random = new Random();
 
-        //genereaza numar random intre 10 si 100
         int size = random.nextInt(91) + 10;
         int[] a = getArrayOfRandomNumbers(size);
         int[] mm = findMaxAndMin(a);
-        System.out.println("Min is:"+mm[0]+" Max is:"+mm[1] );
+       System.out.print("The array is:");
+       for(int i=0;i<a.length;i++) {
+           System.out.print(""+a[i]);
+       }
+       System.out.println();
+       System.out.println("Min is:"+mm[1]+" Max is:"+mm[0]);
+
     }
 }

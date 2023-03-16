@@ -11,7 +11,7 @@ public class PrimeProductTest {
         int n = 10;
         int m = 20;
         long expected = 46189L;
-        long actual = Exercise2PrimeProduct.getPrimeProduct(n, m);
+        long actual = Exercise2PrimeProduct.getPrimeProduct(n, m, args);
         assertEquals(expected, actual);
     }
 }
