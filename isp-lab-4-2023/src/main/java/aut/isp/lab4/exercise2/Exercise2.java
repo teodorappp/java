@@ -18,8 +18,8 @@ public class Exercise2 {
         }
         public String toString () {
             return "FishFeeder{" +
-                    "manufacter=" + String +
-                    ", model=" + String +
+                    "manufacter=" + manufacter+
+                    ", model=" + model + '\'' +
                     '}';
 
 
