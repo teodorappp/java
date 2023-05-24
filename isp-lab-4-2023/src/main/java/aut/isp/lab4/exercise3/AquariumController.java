@@ -1,19 +1,24 @@
-package aut.isp.lab4.exercise1;
+package aut.isp.lab4.exercise3;
 
 public class AquariumController {
     private String manufacturer;
     private String model;
     private float currentTime;
+    private FishFeeder fishFeeder;
 
     public void setCurrentTime(float currentTime) {
         this.currentTime = currentTime;
+    }
+
+    public void setFishFeeder(FishFeeder fishFeeder) {
+        this.fishFeeder = fishFeeder;
     }
 
     public String toString() {
         return "Aquarium Controller [Manufacturer: " + manufacturer + ", Model: " + model + "]";
     }
 
-    public double getCurrentTime() {
-        return 0;
+    public FishFeeder getFishFeeder() {
+        return null;
     }
 }

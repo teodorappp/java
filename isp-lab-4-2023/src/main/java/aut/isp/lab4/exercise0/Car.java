@@ -8,14 +8,14 @@ public class Car {
     /**
      * Relatia de compozitie. Atentie la modul de initalizare a acestui atribut in constructorul de mai jos.
      */
-    private CarAlarm carAlarm;
+    private final CarAlarm carAlarm;
 
     /**
      * Relatia de agregare.
      */
-    private Engine engine;
+    private final Engine engine;
 
-    private String color;
+    private final String color;
 
     private Car(Engine engine, String color) {
         this.engine = engine;
