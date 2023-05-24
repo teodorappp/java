@@ -1,6 +1,8 @@
 package isp.lab2.Exercise5EvenOddSearch;
 
 import static org.junit.Assert.*;
+
+import isp.lab2.Exercise6WordGuess.Exercise5EvenOddSearch.Exercise5EvenOddSearch;
 import org.junit.Test;
 
 public class EvenOddSearchTest {

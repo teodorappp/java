@@ -18,11 +18,11 @@ public class Exercise1RandomArray {
     public static int[] findMaxAndMin(int[] array) {
         int[] maxmin=new int[2];
         maxmin[0]=maxmin[1] =array[0];
-        for(int i=0;i< array.length;i++) {
-            if (array[i] > maxmin[0])
-                maxmin[0] = array[i];
-            if (array[i] < maxmin[1])
-                maxmin[1] = array[i];
+        for (int j : array) {
+            if (j > maxmin[0])
+                maxmin[0] = j;
+            if (j < maxmin[1])
+                maxmin[1] = j;
         }
         return maxmin;
     }
@@ -35,9 +35,9 @@ public class Exercise1RandomArray {
         int[] a = getArrayOfRandomNumbers(size);
         int[] mm = findMaxAndMin(a);
        System.out.print("The array is:");
-       for(int i=0;i<a.length;i++) {
-           System.out.print(""+a[i]);
-       }
+        for (int j : a) {
+            System.out.print("" + j);
+        }
        System.out.println();
        System.out.println("Min is:"+mm[1]+" Max is:"+mm[0]);
 

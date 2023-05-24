@@ -1,4 +1,4 @@
-package isp.lab2.Exercise5EvenOddSearch;
+package isp.lab2.Exercise6WordGuess.Exercise5EvenOddSearch;
 
 public class Exercise5EvenOddSearch {
 
