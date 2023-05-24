@@ -6,22 +6,14 @@ package isp.lab4.exercise1;
 public enum ProductCategory {
     ELECTRONICS("Electronics & Gadgets"),
     FASHION("Fashion");
+
     // todo: add the rest of the constants
+    void HOME_AND_GARDEN("Home & Garden"),
 
-    private String displayName;
+    void BEAUTY('Beauty'),
+    void TOYS('Toys')
 
-    private String Electronics;
-    private String Fashion;
-    private String Home_And_Garden;
+    ProductCategory(String s) {
 
-    private String Beauty;
-private String Toys;
-    ProductCategory(String displayName) {
-        this.displayName = displayName;
-    }
-
-    @Override
-    public String toString() {
-        return this.displayName;
     }
 }
